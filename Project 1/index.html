@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar-bg">
+        <ul class="nav-left">
+            <li><a href="#" class="nav-link">
+                <img class="brand-logo" src="logo.png" alt="">
+            </a></li>
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">Store</a></li>
+            <li><a href="#" class="nav-link">Channels</a></li>
+            <li><a href="#" class="nav-link">
+                Categories
+                <i class="fa-solid fa-caret-down"></i>
+            </a></li>
+            <li><a href="#" class="nav-link">My Stuff</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="nav-item">
+                <a href="#" class="btn">Try for free</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-right-links" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-right-links" href="#">
+                    <i class="fa-solid fa-globe"></i>
+                    EN
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-right-links" href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar-sm">
+        <div class="nav-upper">
+            <a href="#" class="nav-link">
+                <img class="brand-logo" src="logo.png" alt="">
+            </a>
+            <div class="nav-right">
+                <a onclick="document.querySelector('.navbar-sm').classList.toggle('nav-expand')" href="#" class="nav-link">
+                    Browse
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <div class="nav-item">
+                    <a href="#" class="btn">Try for free</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-right-links" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-right-links" href="#">
+                        <i class="fa-solid fa-globe"></i>
+                        EN
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-right-links" href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <ul class="nav-vertical">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <hr class="seperator">
+            <li><a href="#" class="nav-link">Store</a></li>
+            <hr class="seperator">
+            <li><a href="#" class="nav-link">Channels</a></li>
+            <hr class="seperator">
+            <li><a href="#" class="nav-link">
+                Categories
+                <i class="fa-solid fa-caret-right"></i>
+            </a></li>
+            <hr class="seperator">
+            <li><a href="#" class="nav-link">My Stuff</a></li>
+        </ul>
+    </div>
+
+    <div class="navbar-mobile">
+        <div class="nav-upper">
+            <a href="#" class="nav-link">
+                <img class="brand-logo" src="/images/logo.png" alt="">
+            </a>
+            <i onclick="document.querySelector('.navbar-mobile').classList.toggle('nav-mobile-expand')" class="fa-solid fa-bars bar-icon"></i>
+        </div>
+        <ul class="nav-vertical">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <hr class="seperator">
+            <li><a href="#" class="nav-link">Store</a></li>
+            <hr class="seperator">
+            <li><a href="#" class="nav-link">Channels</a></li>
+            <hr class="seperator">
+            <li><a href="#" class="nav-link">
+                Categories
+                <i class="fa-solid fa-caret-right"></i>
+            </a></li>
+            <hr class="seperator">
+            <li><a href="#" class="nav-link">My Stuff</a></li>
+            <hr class="seperator">
+
+
+            <li class="nav-item">
+                <a href="#" class="nav-right-links">Try for free</a>
+            </li>
+            <hr class="seperator">
+
+            <li class="nav-item">
+                <a class="nav-right-links" href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search
+                </a>
+            </li>
+            <hr class="seperator">
+
+            <li class="nav-item">
+                <a class="nav-right-links" href="#">
+                    <i class="fa-solid fa-globe"></i>
+                    EN
+                    <i class="fa-solid fa-caret-right"></i>
+                </a>
+            </li>
+            <hr class="seperator">
+
+            <li class="nav-item">
+                <a class="nav-right-links" href="#">
+                    <i class="fa-solid fa-user"></i> Login
+                    <i class="fa-solid fa-caret-right"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+<!-- Fontawesome JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</html>

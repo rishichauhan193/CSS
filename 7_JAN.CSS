@@ -1,0 +1,51 @@
+/* Lobster */
+@font-face{
+    font-family: "Royal Bold";
+    src: url('/fonts/Lobster/Lobster-Regular.ttf');
+}
+
+/* Poppins */
+@font-face{
+    font-family: Poppins;
+    src: url('/fonts/Poppins/Poppins-ExtraLight.ttf');
+    font-weight: 200;
+}
+@font-face{
+    font-family: Poppins;
+    src: url('/fonts/Poppins/Poppins-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face{
+    font-family: Poppins;
+    src: url('/fonts/Poppins/Poppins-Bold.ttf');
+    font-weight: 700;
+}
+
+/* Dancing Script */
+@font-face{
+    font-family: "Cursive Handwriting";
+    src: url('/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf');
+}
+/* ------------------- monteserrat fonts ------------------- */
+@font-face{
+    font-family: monty;
+    src: url('/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+/* ------------------- moondance fonts ------------------- */
+@font-face{
+    font-family: "moon dance";
+    src: url('/fonts/Moon_Dance/MoonDance-Regular.ttf');
+}
+
+/* ------------------- monteserrat fonts ------------------- */
+@font-face{
+    font-family: "Rowdies";
+    src: url('/fonts/Rowdies/Rowdies-Regular.ttf');
+}
+
+/* ------------------- monteserrat fonts ------------------- */
+@font-face{
+    font-family: "Rowdies Light";
+    src: url('/fonts/Rowdies/Rowdies-Light.ttf');
+}

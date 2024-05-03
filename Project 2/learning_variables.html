@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root{
+        --global-variable: 3rem;
+    }
+
+    .container{
+        --text-color: royalblue;
+        --titleFontSize: 3rem;
+        --subTitleFontSize: 2rem;
+        --broad_spacing: 3rem 2rem;
+        --narrow_spacing: 1rem;
+        --primary_fonts: Verdana, Geneva, Tahoma, sans-serif;
+        --secondary_fonts: 'cursive', sans-serif;
+
+        color: var(--text-color);
+        padding: var(--broad_spacing);
+    }
+    h1{
+        font-size: var(--titleFontSize);
+        font-size: var(--global-variable);
+        margin: var(--broad_spacing);
+    }
+    h2{
+        font-size: var(--subTitleFontSize);
+    }
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    hr{
+        margin-bottom: 1rem;
+    }
+    .title-text{
+        margin: 3rem 2rem;
+    }
+    button{
+        margin-right: 1rem;
+    }
+</style>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, harum. Maiores perferendis vero harum enim.</h1>
+    <p class="title-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, sint.</p>
+    <div class="container">
+        <h2>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sint excepturi tempora sequi delectus. Neque saepe impedit laboriosam. Quia, cum.</p>
+        <hr>
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nemo vero fugiat tempore in quas, id distinctio pariatur veritatis incidunt aperiam possimus saepe. Vel voluptatum asperiores quibusdam! Quisquam, magni neque? Perspiciatis, odio corrupti, omnis temporibus, nisi quasi doloremque mollitia quidem quisquam exercitationem illum excepturi sapiente fuga impedit soluta minima blanditiis?</p>
+        <button>Button 1</button>
+        <button>Button 2</button>
+    </div>
+</body>
+</html>

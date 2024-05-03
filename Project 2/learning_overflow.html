@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        height: 100vh;
+        font-family: sans-serif;
+    }
+    div{
+        border:solid;
+        width: 300px;
+        height: 250px;
+        padding: 25px;
+        background-color: blanchedalmond;
+        /* overflow: scroll; */
+        overflow: auto;
+    }
+    div h2{
+        font-family: cursive;
+        margin-bottom: 1.5rem;
+    }
+    div p{
+        font-size: 1.2rem;
+    }
+
+    #box1{
+        /* height: 50px; */
+        /* height: 150px; */
+        /* overflow: visible;      default */
+        /* overflow: hidden; */
+        /* overflow: scroll; */
+        /* overflow-y: scroll; */
+    }
+
+    #box3{
+        padding: 0;
+        /* overflow-x: scroll; */
+        /* overflow-y: scroll; */
+        /* overflow: hidden; */
+    }
+
+    img{
+        height: 250px;
+        /* width: 400px; */
+    }
+</style>
+<body>
+    <div id="box1">
+        <h2>Happy Birthday!</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi in doloremque commodi adipisci magnam eos ipsum totam omnis fugit sequi, beatae obcaecati? Numquam accusamus maxime, impedit in necessitatibus nostrum nemo?</p>
+    </div>
+    <div id="box2">
+        <h2>Happy Marriage Anniversary</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div id="box3">
+        <!-- <h2>Now get back to work</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quam quis natus beatae animi maxime ea quas nulla rerum dolorum.
+        </p> -->
+        <img src="/img/pizza1.jpg" alt="">
+    </div>
+</body>
+</html>

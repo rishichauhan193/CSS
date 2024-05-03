@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .outer-box{
+        background-color: rgb(250, 250, 140);
+        height: 300px;
+    }
+    #ob1{
+        font-size: 50px;
+    }
+    #ob2{
+        font-size: 100px;
+    }
+    .inner-box{
+        /* font-size: 25px; */
+        /* 196px = 1 inch */
+
+        /* font-size: 48px; */
+    }
+    #box1{
+        background-color: chocolate;
+
+        /* 1rem = 16px generally. */
+        /* rem = multiple of root's font-size, default font-size of root is 16px */
+        /* font-size: 3rem; */
+        font-size: 1em;     /* multiple of parent's font-size */
+    }
+    #box2{
+        background-color: cornflowerblue;
+        font-size: 1em;
+    }
+    #bg-img{
+        /* width: 844px; */
+        width: 100vw;  /* % of viewport width */
+        /* height: 100vh; */
+    }
+</style>
+<body>
+    <!-- <img id="bg-img" src="/img/space1.jpg" alt=""> -->
+    <!-- <img id="bg-img" src="/img/waterfall1.jpg" alt=""> -->
+    <div class="outer-box" id="ob1">
+        <div class="inner-box" id="box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione magnam corrupti blanditiis, autem ipsam dolorum quis sint nam! Error, temporibus.
+        </div>
+    </div>
+    <div class="outer-box" id="ob2">
+        <div class="inner-box" id="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione magnam corrupti blanditiis, autem ipsam dolorum quis sint nam! Error, temporibus.
+        </div>
+    </div>
+</body>
+</html>
+
+<!--  
+    Next class: remaining units
+-->

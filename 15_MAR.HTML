@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* CSS Reset */
+    *,
+    ::before,
+    ::after {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        border: solid blue;
+        width: 150px;
+    }
+
+    #item1 {
+        /* clockwise margin */
+        margin: 10px 20px 30px 40px;
+    }
+
+    /* #item2{
+        Margins overlap!!
+        margin-top: 30px;
+        margin-top: 40px;
+        margin-top: 10px;
+    } */
+
+    #item3 {
+        /* margin: top left-right bottom */
+        margin: 10px 20px 30px;
+    }
+
+    /* Margins do not overlap in in-line elements */
+    #item4 {
+        margin-right: 50px;
+    }
+
+    #item5 {
+        margin-left: 50px;
+    }
+
+    #btn1 {
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }
+
+    #btn2 {
+        /* padding in all directions */
+        padding: 15px;
+    }
+
+    #btn3 {
+        /* padding: top-bottom left-right */
+        padding: 10px 25px;
+    }
+
+    #btn4 {
+        /* padding clockwise */
+        padding: 10px 20px 30px 40px;
+    }
+
+    #btn5 {
+        /* padding: top left-right bottom */
+        padding: 1rem 2rem 3rem;
+    }
+
+    #btn6 {
+        margin-top: 16px;
+    }
+
+    body {
+        /* To get text in center of an element or to get all in-line elements in the center of the screen */
+        /* text-align: center; */
+        /* text-align: right; */
+    }
+
+    #item2 {
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin: auto;
+    }
+
+    h1 {
+        border: red solid;
+        /* width: 350px; */
+        /* margin-left: auto; */
+    }
+
+    body {
+        border: solid blue;
+        height: 100vh;
+    }
+
+    #myBox {
+        border: solid maroon;
+        background-color: pink;
+        height: 200px;
+        width: 150px;
+        /* margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto; */
+
+        /* margin: auto;
+        margin-top: 3rem; */
+
+        /* margin: 3rem auto; */
+        margin: 3rem auto 0;
+    }
+
+    .button-box{
+        border: red solid;
+        /* text-align: center; */
+        width: fit-content;
+        margin: auto;
+    }
+    #myButton {
+        /* Margin auto works only with block elements */
+        /* margin: auto; */
+        /* text-align: center; */
+    }
+</style>
+
+<body>
+    <!-- 
+    <div class="box" id="item1">Box 1</div>
+    <div class="box" id="item2">Box 2</div>
+    <div class="box" id="item3">Box 3</div>
+    <button id="item4">Button 4</button>
+    <button id="item5">Button 5</button>
+    <br> <br>
+    <button id="btn1">Button 1</button>
+    <button id="btn2">Button 2</button>
+    <br><br>
+    <button id="btn3">Button 3</button>
+    <button id="btn4">Button 4</button>
+    <button id="btn5">Button 5</button>
+    <br><br>
+    <h1>This is my heading!</h1>
+    <p>This is a paragraph...</p>
+    <button id="btn6">Button 6</button> -->
+
+    <div id="myBox"></div>
+    <div class="button-box">
+        <button id="myButton">myButton</button>
+    </div>
+    <button id="yourButton">yourButton</button>
+</body>
+
+</html>
+<!-- 
+    Next class: Getting things horizontally centered
+ -->

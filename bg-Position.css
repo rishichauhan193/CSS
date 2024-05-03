@@ -1,0 +1,31 @@
+div{
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+    background-image: url("background.jpeg");
+    background-size: 300px 200px;
+    background-repeat: no-repeat;
+
+
+    /* default */
+    /* background-position: 0px 0px; */
+
+    /* background-position: 50px 100px; */
+
+    /* default */
+    /* background-position: 0% 0%; */
+    
+    /* background-position: 20% 20%; */
+
+
+    /* background-position: left; */
+    /* background-position: right; */
+    /* background-position: top; */
+    /* background-position: bottom; */
+    /* background-position: center; */
+
+    /* background-position: top right; */
+
+    /* default */
+    /* background-position: left top; */
+}

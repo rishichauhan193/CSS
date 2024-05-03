@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Tag Selector */
+    h1{
+        color: maroon;
+    }
+    a{
+        text-decoration: none;
+        color: red;
+        /* text-decoration:line-through; */
+        /* text-decoration:underline; */
+        /* text-decoration:overline; */
+    }
+    span{
+        text-decoration: overline;
+        /* text-decoration: underline; */
+        /* text-decoration: line-through; */
+    }
+
+    /* Class Selector */
+    .btn {
+        background-color: green;
+        color: white; 
+    }
+
+    /* ID Selector */
+    #red-bg {
+        background-color: red;
+    }
+
+
+    /* Multiple Selector */
+    div a{
+        background-color: blue;
+    }
+
+    div #red-bg{
+        color: blueviolet;
+    }
+
+    .middle-box #red-bg{
+
+    }
+
+    #red-bg div{
+        
+    }
+
+    .middle-box .btn{
+
+    }
+    .middle-box a{
+
+    }
+</style>
+
+<body>
+    <!-- <span>Hello!</span> -->
+    <div>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, saepe!</h1>
+        <a class="btn" href="#">Button 1</a> |
+        <a class="btn" href="#">Button 2</a>
+    </div>
+
+    <div class="middle-box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolor dolore excepturi ipsa a officia,
+            cum aliquam laudantium reiciendis distinctio explicabo aliquid quod expedita quia alias perspiciatis minus
+            possimus cumque.</p>
+        <button class="btn">Button 3</button>
+        <button id="red-bg" class="btn">Button 4</button>
+    </div>
+
+    <div>
+        <p>Voluptas sunt accusamus dicta asperiores, recusandae delectus! Error eligendi dicta, similique dolor totam
+            reprehenderit doloribus, cum tempore adipisci iure unde nulla molestias amet accusantium recusandae et
+            asperiores vero nihil omnis?</p>
+        <span class="btn">Button 5</span>
+        <span class="btn">Button 6</span>
+    </div>
+
+    <div>
+        <p>Est eos numquam quisquam necessitatibus? Iste quibusdam, at laboriosam temporibus nihil consectetur,
+            consequuntur nam harum et corrupti voluptate asperiores nesciunt vel quaerat cupiditate, similique impedit?
+            Suscipit cum ea omnis unde?</p>
+    </div>
+</body>
+
+</html>

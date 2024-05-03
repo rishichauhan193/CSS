@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Pseudo Elements */
+    h1::before{
+        content: "I";
+        display: block;
+        background-color: orangered;
+        text-align: center;
+    }
+
+    h1::after{
+        content: "India";
+        display: block;
+        background-color: green;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    /* #i{
+        color: orangered;
+    }
+    #india{
+        color: green;
+    } */
+
+    /* #title:after{
+        content: "My Family";
+        color: white;
+    } */
+</style>
+<body>
+    <!-- before & after -->
+    <!-- <h1><span id="i">I</span>Love<span id="india">India</span></h1> -->
+    <h1 id="title">Love</h1>
+
+    <!-- 
+        Before & After don't go 'before' or 'after' the element but they remain inside the target element, they simply go 'before' or 'after' the content of the target element. 
+    -->
+
+    <!-- Before/After don't work on empty/self-closing tags as they don't have content -->
+    <!--     
+        <img src="" alt="">
+        <input type="text">
+        <hr>
+        <br> 
+    -->
+</body>
+</html>
+<!-- 
+    Next Class: Rules of before & after, where they go and further
+ -->

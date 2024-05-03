@@ -1,0 +1,30 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("Burjkhalifa.jpg"),url("Burjkhalifa.jpg"),url("Burjkhalifa.jpg"),url("Burjkhalifa.jpg");
+    background-repeat: no-repeat;
+    background-size: 40vw 40vh;
+    background-position: 0% 0%,0% 92%,100% 0vh,100% 92%;
+    background-color: rgb(106, 146, 207);
+} 
+
+/* 4 Images 
+
+    width = same
+    height = same
+
+*/
+/*
+body{
+    width: 100%;
+    height: 600px;
+    background-image:url("tiger2.png"),url("lion2.png"),url("forest.jpg");
+    background-repeat:no-repeat;
+    background-size: 300px,280px,100%;
+    background-position: right 300px,450px,center;
+}
+*/
+
+/* 
+Lion opposite  Tiger
+*/

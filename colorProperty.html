@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Property</title>
+    <style>
+        /* 1) Color Name */
+        p{
+            color: crimson;
+        }
+        /* 2) Hexa Decimal Number */
+        span{
+            font-size: 72px;
+            /* color :#fff; */
+
+                    /*red(0)  green(00)  blue(00)*/
+            color:#ff0000;
+        }
+        /* 3) RGB Number
+        0-255
+        */
+        h4{
+            color:rgb(255,0,0);
+        }
+        /* 4) RGBA Number
+        A -Alpha (0-1)  opacity 
+        */
+        h3{
+            color: rgba(255,0,0,0.5);
+        }
+        /* 5) HSL Color */
+        /* hue(0-360)deg, saturation(0-100%)(100% default), lightness(0-100%)(50% default)*/
+        h2{
+            color:hsl(360,100%,50%);
+        }
+        /* 6) HSLA Color */
+        /* hue(0-360)deg, saturation(0-100%)(100% default), lightness(0-100%)(50% default), alpha(0-1)*/
+        h1{
+            color:hsla(360,100%,50%,0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- color name,Hexa Decimal,rgb,hsla,hslrgba -->
+    <p>Color Name</p>
+    <span>Hexa Decimal</span>
+    <h4>rgb</h4>
+    <h3>rgba</h3>
+    <h2>hsl</h2>
+    <h1>hsla</h1>
+</body>
+</html>
+
+<!-- 
+    Block Element : 
+    <div>,p,h1 to h6,ol,ul,li,form,Table,tr
+        -Always Start with New Line
+        -End with New Line
+        - width 100% (default)
+    Inline Element :
+    <span>,img,audio
+        -Never Start with New Line
+        -Never End with New Line
+        - width content Size (default)
+    Empty Element :
+    <br>
+    <hr>
+
+
+
+
+
+
+    Hexa Decimal Number :
+    #000000
+
+    red    green       blue
+    #0       0          0
+    0-9
+    a-f
+    0-f -> 16
+ -->

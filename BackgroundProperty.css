@@ -1,0 +1,67 @@
+/* 1) Background Color : (color-value : 6 type) */
+body{
+    /* width: 100%;
+    height: 500px;
+    border:1px solid black ; */
+    /*1) color name */
+    /* background-color: cadetblue; */
+    /*2)  Hexa decimal Number */
+    /* background-color: #0000ff; */
+    /*3) rgb color */
+    /* background-color: rgb(0,255,0); */
+    /* 4) rgba color    5) hsl color  6) hsla color */
+
+    /* ----------------Background-image--------------- */
+    /* background-image: url(background.jpeg);  url Function    (image path) */
+    /* background-image: url("background.jpeg"); */
+
+
+    /* -----------------Background-size--------------- */
+    /* all in one */
+    /* background-size: 100px; */
+
+    /* 1) width   2) height */
+    /* background-size: 400px 200px; */
+    /* background-size: 100% 100%; */
+
+    /* default */
+    /* background-size: auto; */
+
+    /* Proper Format (doesn't Strach)  */
+    /* background-size: contain; */
+
+    /* Full Screen */
+    /* background-size: cover; */
+
+
+    /* -----------------Background-repeat---------------- */
+    /* default */
+    /* background-repeat: repeat; */
+
+    /* No-repeat (background-image) */
+    /* background-repeat: no-repeat; */
+
+    /* X-axis repeatation */
+    /* background-repeat: repeat-x; */
+
+    /* Y-axis repeatation */
+    /* background-repeat: repeat-y; */
+
+    /* space beetween Images  */
+    /* background-repeat: space; */
+
+    /* background-repeat: round; */
+
+
+    /* background-position: ; */
+}
+div{
+    width: 100%;
+    height: 400px;
+    border: 1px solid black;
+    background-image: url(background.jpeg);
+    background-size: 250px 250px;
+    /* background-repeat: space round; */
+    /* background-repeat: round repeat-x; */
+    /* background-repeat: round; */
+}

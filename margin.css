@@ -1,0 +1,17 @@
+p{
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+div{
+    width: 300px;
+    margin: auto;
+    border: 4px salmon;
+}
+.box{
+    width: 300px;
+    margin: auto;
+    border: 4px rgb(186, 42, 26);
+    background-color: bisque;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .container{
+        font-size: 2em;
+    }
+    #item1 {
+        font-size: 1.5rem;
+    }
+
+    #item2 {
+        font-size: 1.5em;
+        /* 
+        1 em = 2 rem = 32px => 1.5em = 48px
+        */
+    }
+
+    /*
+    Meaning of em:
+        if em is used in 'font-size' property then, em means font size of parent.
+    */
+    #text1,
+    #text2 {
+        font-size: 2em;
+        /*
+        item1: 15px, item2: 20px 
+        text1: 1em = 15px => 2em = 30px 
+        text2: 1em = 20px => 2em = 40px
+        */
+        /* 
+        item1: 1.5rem, when appearance setting is medium:
+        text1: 1em = 1.5rem = 24px => 2rem = 48px
+        */
+        /*
+        container: 2rem, item1: 1.5rem, item2: 1.5em, appearance setting is medium
+        text1: 1em = 1.5rem = 24px => 2em = 48px
+        text2: 1em = 48px => 2em = 96px
+        */
+    }
+
+    #site-title {
+        font-size: 1rem;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <p id="site-title">Site Title</p>
+        <div class="box" id="item1">
+            <p id="text1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptate neque fuga iusto
+                rem! Culpa dicta maxime eius aut accusantium, doloremque dignissimos temporibus quisquam delectus!</p>
+        </div>
+
+        <div class="box" id="item2">
+            <p id="text2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptate neque fuga iusto
+                rem! Culpa dicta maxime eius aut accusantium, doloremque dignissimos temporibus quisquam delectus!</p>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- 
+    Next Class: 2nd part of the definition of em
+ -->

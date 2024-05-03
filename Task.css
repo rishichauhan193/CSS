@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+h1{
+    color: red;
+}
+h2{
+    color: green;
+}
+h3{
+    color: rgb(187, 27, 81);
+}
+h4{
+    color: rgb(138, 48, 148);
+}
+h5{
+    color: lightcoral;
+}
+h6{
+    color: rgb(181, 188, 47);
+}

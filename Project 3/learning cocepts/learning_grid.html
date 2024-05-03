@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(198, 217, 234);
+        font-family: sans-serif;
+        padding: 2rem 1rem;
+    }
+    .container{
+        display: grid;
+        gap: 1rem;
+        /* grid-template-columns: 200px 200px 200px; */
+        /* grid-template-columns: 400px 200px 100px; */
+        /* grid-template-columns: 100px 100px 100px 100px; */
+        /* grid-template-columns: repeat(4, 100px); */
+        /* grid-template-columns: repeat(4, 23.7%); */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        /* grid-template-columns: repeat(4, 1fr); */
+    }
+    .boxes{
+        /* border: blue solid; */
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    #box1{
+        background-color: blueviolet;
+        position: relative;
+        overflow: hidden;
+    }
+    #box2{
+        background-color: slategray;
+    }
+    #box3, #box4{
+        background-color: white;
+    }
+    #box5{
+        background-color: #333;
+    }
+
+    #box1, #box2, #box5{
+        color: white;
+    }
+
+    .pofile{
+        /* border: solid black; */
+        width: fit-content;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .pic{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        /* border: solid black; */
+        background-color: rgb(171, 170, 170);
+        overflow: hidden;
+    }
+    .profile-pic{
+        height: 100%;
+    }
+    .name{
+        font-size: 1.1rem;
+        margin-bottom: 0.1rem;
+    }
+    .designation{
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+    .headline{
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    .description{
+        font-size: 1.1rem;
+    }
+    .container .comma{
+        font-size: 40rem;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: -8rem;
+        right: 5rem;
+        opacity: 0.4;
+    }
+    .circle{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        left: 7rem;
+        top: 10rem;
+        opacity: 0.4;
+    }
+
+    @media (min-width: 700px){
+        .container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #box1{
+            grid-column: span 2;
+        }
+        #box3{
+            grid-row: span 2;
+        }
+        #box5{
+            grid-column: span 2;
+        }
+    }
+
+    @media (min-width: 1000px){
+        .container{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="boxes" id="box1">
+            <div class="pofile">
+                <div class="pic">
+                    <img class="profile-pic" src="/manager.jpg" alt="">
+                </div>
+                <div class="profile-text">
+                    <h1 class="name">Lorem, ipsum.</h1>
+                    <p class="designation">Lorem, ipsum.</p>
+                </div>
+            </div>
+            <div class="circle"></div>
+            <p class="comma">“</p>
+            <h3 class="headline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quas quis ipsa nemo beatae, expedita illum tempore quod incidunt?</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quibusdam cupiditate qui exercitationem, quisquam ad animi veritatis eaque velit perspiciatis earum! Distinctio, omnis! Vero accusantium laborum neque sint dolorum dolore dicta, laudantium reprehenderit modi itaque ducimus non, expedita, molestiae adipisci. Repudiandae iste suscipit enim delectus sed illo.</p>
+        </div>
+        <div class="boxes" id="box2">
+            <div class="pofile">
+                <div class="pic"></div>
+                <div class="profile-text">
+                    <h1 class="name">Totam, vel.</h1>
+                    <p class="designation">Saepe, incidunt.</p>
+                </div>
+            </div>
+            <h3 class="headline">Voluptatem debitis autem architecto expedita eligendi veniam.</h3>
+            <p class="description">Asperiores magnam odit minima. Velit, quasi? Hic totam eos corrupti laborum odit maiores est quasi molestias porro. Eum incidunt dolor tempore laboriosam tempora.</p>
+        </div>
+        <div class="boxes" id="box3">
+            <div class="pofile">
+                <div class="pic"></div>
+                <div class="profile-text">
+                    <h1 class="name">Obcaecati, accusamus.</h1>
+                    <p class="designation">Odio, optio!</p>
+                </div>
+            </div>
+            <h3 class="headline">Quisquam impedit possimus tempore illo labore eveniet.</h3>
+            <p class="description">Aliquid commodi, animi est dolorum accusantium sequi harum molestiae esse quasi, similique doloremque voluptas autem, cum laborum veniam. Reiciendis dolor quis minima? Amet, fugit magnam, expedita culpa explicabo maiores voluptate, ducimus eos sapiente eius laudantium. Dicta eius libero ducimus, nemo maxime natus adipisci nulla. Animi, cupiditate! Enim eaque eos aliquid accusamus commodi facere corporis pariatur, distinctio ad nihil quam natus nostrum ducimus earum. Neque repellendus sit laborum eaque illo deleniti iste blanditiis, praesentium suscipit libero alias ex corporis quia, voluptatibus numquam voluptatum. Minima quibusdam, cupiditate non optio praesentium dignissimos et?</p>
+        </div>
+        <div class="boxes" id="box4">
+            <div class="pofile">
+                <div class="pic"></div>
+                <div class="profile-text">
+                    <h1 class="name">Iusto, sed?</h1>
+                    <p class="designation">Itaque, voluptatibus?</p>
+                </div>
+            </div>
+            <h3 class="headline">Distinctio quas facere magni consequatur voluptate.</h3>
+            <p class="description">Eveniet culpa, soluta dolor veniam reiciendis, iusto nesciunt ab obcaecati iure possimus? Earum quis commodi quibusdam nisi ullam saepe eos.</p>
+        </div>
+        <div class="boxes" id="box5">
+            <div class="pofile">
+                <div class="pic"></div>
+                <div class="profile-text">
+                    <h1 class="name">Facere, deleniti.</h1>
+                    <p class="designation">Fuga, assumenda?</p>
+                </div>
+            </div>
+            <h3 class="headline">Assumenda amet ullam modi, molestiae eius commodi est, exercitationem asperiores quis unde? Tenetur!</h3>
+            <p class="description">Ab quae facilis fuga quisquam inventore maxime quaerat, debitis ipsam corrupti aliquid minima tempora qui dolor voluptate quia nulla nostrum blanditiis officia asperiores quos enim? Recusandae cupiditate voluptatem sed omnis tenetur? Atque doloremque possimus adipisci quam, maiores error eveniet error nihil.</p>
+        </div>
+    </div>
+</body>
+</html>

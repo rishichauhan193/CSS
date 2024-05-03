@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1.class1#id1{
+            color: blueviolet;
+        }
+        .class1#id1{
+            color: aqua;
+        }
+        h1#id1{
+            color: yellow;
+        }
+        /* Type Selector */
+        h1{
+            color: green;
+        }
+        /* Class Selector */
+        .class1{
+            color: blue;
+        }
+        /* id Selector */
+        #id1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Type Selector</h1>
+    <h1 class="class1">Class Selector</h1>
+    <h1 id="id1" class="class1">Id Selector</h1>
+    <p class="class1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem quos et ipsum explicabo nemo laudantium deserunt, repellat, dolores accusantium illum minus dolor ab, eaque itaque vero ipsa quae architecto.</p>
+</body>
+</html>
+
+
+<!-- 
+    id Selector > Class Selector > Type Selector
+
+     0 0 0 
+     0 0 1
+     
+
+
+     16
+ -->

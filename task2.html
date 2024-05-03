@@ -1,0 +1,142 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>
+        Animation
+    </title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+                background-color: antiquewhite;
+                animation-name: body;
+               animation-duration: 1s;
+               animation-iteration-count: infinite;
+            }
+            @keyframes body {
+                0%{
+                    background-color: rgb(165, 156, 50);
+                }
+                50%{
+                    border-radius: 50px;
+                    background-color: rgb(153, 165, 42);
+                }
+                100%{
+                    border-radius: 70px;
+                    background-color: rgb(100, 57, 91);
+                }
+        }
+
+        a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: gray;
+            padding: 30px 60px0;
+            font-size: 50px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: rebeccapurple;
+            box-shadow: rgb(147, 82, 82);
+            overflow: hidden;
+        }
+
+        a span:nth-child(1) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right, #2eb027, rgb(53, 52, 52));
+            animation: ani1 2s infinite linear;
+        }
+
+        a span:nth-child(2) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, #0c002b, gray);
+            animation: ani2 2s infinite linear;
+        }
+
+        a span:nth-child(3) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to bottom, #0c002b, gray);
+            animation: ani3 2s infinite linear;
+        }
+
+        a span:nth-child(4) {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, #0c002b, gray);
+            animation: ani4 2s infinite linear;
+        }
+
+        @keyframes ani1 {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateY(100%);
+            }
+        }
+
+        @keyframes ani2 {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateY(100%);
+            }
+        }
+
+        @keyframes ani3 {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateY(100%);
+            }
+        }
+
+        @keyframes ani4 {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateY(100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="task.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Royal Technosoft
+    </a>
+</body>
+

@@ -1,0 +1,384 @@
+@import url('fonts.css');
+
+/* ------------------ CSS Reset ------------------ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------ Variables ------------------ */
+:root{
+    --primary-fonts: "Royal Primary Fonts", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --secondary-fonts: "Lexend Deca", cursive;
+    --headline-fonts: Anton, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --btn-fonts: Livvic, sans-serif;
+    
+    --white: #ffffff;
+    --text-light: rgba(104, 102, 102, 0.855);
+    --text-dark: #3f4954;
+    --dark-bg: #0f0f0f;
+    --black: #000000;
+
+    --nav-hover: #104f55;
+    --gradient: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+/* ------------------ Global Classes ------------------ */
+body{
+    font-family: var(--primary-fonts);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.btn{
+    background: var(--gradient);
+    font-family: var(--btn-fonts);
+    padding: 0.7rem 2.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--black);
+}
+.rounded-btn{
+    border-radius: 2rem;
+}
+
+/* ------------------ Navbar ------------------ */
+nav{
+    background-color: blanchedalmond;
+    padding: 0 25px;
+    height: 5rem;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.show-nav{
+    height: 28rem;
+}
+nav a{
+    color: var(--text-dark);
+}
+
+.upper-nav{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-logo{
+    font-family: var(--secondary-fonts);
+}
+
+.nav-menu{
+    padding: 0 3rem;
+}
+.nav-menu li{
+    padding: 1rem 0;
+}
+.nav-menu li:hover{
+    background-color: var(--nav-hover);
+}
+
+.nav-link{
+    font-size: 1.1rem;
+}
+.nav-menu li:hover .nav-link{
+    color: var(--white);
+}
+
+.social{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+.social-icon{
+    font-size: 1.2rem;
+}
+
+/* ------------------ Banner ------------------ */
+.banner{
+    height: 40rem;
+    position: relative;
+    overflow: hidden;
+    color: var(--white);
+    text-align: center;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('/assets/pexels-deva-darshan.jpg') top left/1100px no-repeat;
+    z-index: -1;
+}
+
+.banner h2{
+    font-family: var(--primary-fonts);
+    font-size: 1.3rem;
+    margin-top: 10rem;
+}
+.banner h3{
+    font-size: 3rem;
+    font-family: var(--secondary-fonts);
+    margin-bottom: 2rem;
+}
+.banner-btn:hover{
+    background: transparent;
+}
+
+#wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 1000px;
+    width: 100%;
+}
+
+
+/* ------------------ Carousel ------------------ */
+.carousel-container{
+    margin-top: 5rem;
+    position: relative;
+    background: url('/assets/Abract01.png') no-repeat top right/65%;
+}
+.carouse-item{
+    width: 90%;
+    margin: 5rem auto;
+    text-align: center;
+    padding-bottom: 1rem;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+}
+.carousel-img{
+    height: 250px;
+}
+.carousel-title{
+    font-size: 1.6rem;
+    margin: 1rem 0.5rem 2rem;
+}
+.carouse-item p{
+    margin-top: 2rem;
+}
+
+.owl-nav{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-arrows{
+    font-size: 1.5rem;
+    color: var(--text-dark);
+}
+.carousel-arrows:hover{
+    color: var(--text-light);
+}
+.owl-theme .owl-nav [class*="owl-"]:hover{
+    background-color: transparent;
+}
+
+/* ------------------ Main ------------------ */
+main{
+    display: grid;
+}
+
+.blog-post-container{
+    width: 90%;
+    margin: auto;
+}
+.blog-img-box{
+    overflow: hidden;
+}
+.blog-post-img{
+    width: 100%;
+    transition: 0.3s;
+}
+.blog-post-img:hover{
+    transform: scale(1.2);
+}
+.blog-img-container{
+    position: relative;
+}
+.blog-post-sticker{
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+.blog-headline{
+    font-family: var(--headline-fonts);
+    color: var(--text-dark);
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+}
+.blog-text{
+    font-family: var(--secondary-fonts);
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+.blog-post-separator{
+    margin: 2rem 0;
+}
+.pagination{
+    margin: 3rem auto;
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.pages{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.page-no{
+    font-family: var(--secondary-fonts);
+    background-color: var(--text-dark);
+    color: var(--white);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.pagination-arrows{
+    font-size: 1.7rem;
+}
+
+/* ------------------ Sidebar ------------------ */
+aside{
+    margin: 5rem 0;
+}
+
+/* ------------------ Sidebar:Category ------------------ */
+.sidebar-section{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+.sidebar-title{
+    font-family: var(--secondary-fonts);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.sidebar-item-container{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+.category-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/* ------------------ Sidebar:Popular Post ------------------ */
+.popular-post{
+    margin-bottom: 4rem;
+}
+.popular-post-img{
+    width: 100%;
+}
+.popular-post-headline{
+    font-family: var(--headline-fonts);
+    color: var(--text-dark);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* ------------------ Sidebar:Newsletter ------------------ */
+.newsletter-input-box{
+    margin-bottom: 1.5rem;
+}
+.newsletter-input{
+    width: 100%;
+    height: 3rem;
+}
+.newsletter-input-box .newsletter-input{
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+.newsletter-btn{
+    border: none;
+    font-size: 1.2rem;
+}
+
+
+
+.popular-tags{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.popular-post-btn{
+    padding: 0.5rem 1rem;
+}
+
+/* ------------------ Media Queries ------------------ */
+
+@media (min-width: 768px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .bar-icon{
+        display: none;
+    }
+    .nav-menu{
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    .nav-menu li{
+        height: 100%;
+        padding: 1.8rem 1rem 0;
+    }
+    .carousel-container{
+        padding: 2rem;
+    }
+    main{
+        grid-template-columns: 70% 30%;
+    }
+    .blog-post-sticker{
+        display: block;
+    }
+}
+
+@media (min-width: 1000px){
+    .banner::before{
+        background-size: 100vw;
+    }
+    .carouse-item{
+        width: 75%;
+    }
+    .blog-post-sticker{
+        left: 50%;
+        transform: translate(-50%, 50%);
+        border-radius: 1em;
+    }
+}
+
+@media (min-width: 1200px){
+    #wave{
+        bottom: -60px;
+    }
+}
+
+@media (min-width: 1400px){
+    #wave{
+        bottom: -120px;
+    }
+}

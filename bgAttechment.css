@@ -1,0 +1,30 @@
+body{
+    /* border: 1px solid black;
+    background-image: url("i2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* default */
+    /* background-attachment: scroll; */
+    /* background-attachment: fixed; */
+
+    /* Doesn't workable */
+    /* background-attachment: local; */
+}
+
+div{
+    width: 50%;
+    height: 500px;
+    border: 1px solid red;
+    margin: auto;
+    overflow: auto;
+    background-image: url("i1.jpeg");
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    /* default */
+    /* background-attachment: fixed; */
+
+    /* doesn't workable */
+    /* background-attachment: scroll; */
+    background-attachment: local;
+}

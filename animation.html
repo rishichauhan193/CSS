@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>BOX ANIMATION</title>
+        <style>
+            body{
+                margin: 0;
+            }
+            *{
+                box-sizing: border-box;
+            }
+            .box{
+                width: 200px;
+                height: 200px;
+                background-color: aquamarine;
+                padding: 20px;
+                animation-name: ani;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            .main{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            @keyframes ani{
+                0%{
+                    background-color: blueviolet;
+                }
+                50%{
+                    border-radius: 50%;
+                    background-color: brown;
+                }
+                100%{
+                    border-radius: 70%;
+                    background-color: rgb(60, 57, 100);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="box"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .outer{
+        background-color: lightgreen;
+        width: 1500px;
+        height: 100vh;
+    }
+    .inner{
+        background-color: lightpink;
+        width: 80%;     /* 1200px */
+        height: 90%;    /* 90vh */
+    }
+    .inner-most{
+        background-color: maroon;
+        width: 80%;     /* 960px */
+        height: 90%;    /* 81vh */
+    }
+
+    #myLink, #yourLink{
+        background-color: lightblue;
+        color: maroon;
+        text-decoration: none;
+    }
+    #myLink{
+        height: 120px;
+        width: 300px;
+    }
+    #yourLink{
+        height: 10px;
+        width: 30px;
+    }
+    /* 
+        Height & Width don't apply on inline-elements except <button> & <img>
+    */
+</style>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="inner-most">
+                <br> <br> <br> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" id="myLink">myLink</a>
+
+                <br> <br> <br> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" id="yourLink">yourLink</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: antiquewhite;
+        font-family: sans-serif;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.3rem;
+        line-height: 1.8em;
+    }
+    a{
+        text-decoration: none;
+        color: blue;
+        position: relative;
+    }
+    a:hover::after{
+        content: attr(data-tool-tip);
+        background-color: black;
+        color: antiquewhite;
+        white-space: nowrap;
+        position: absolute;
+        bottom: 120%;
+        left: 50px;
+        font-size: 1rem;
+        padding: 0 20px;
+        border-radius: 30px;
+    }
+</style>
+<body>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nobis tempora minima fugit dignissimos enim architecto, <a href="#" data-tool-tip="Like our facebook page">voluptatum voluptates</a> possimus ipsam explicabo quos neque praesentium facilis quas, dolorum a quam! Consectetur dolore modi tenetur nostrum fugit exercitationem quidem, possimus mollitia dolores, tempore magnam sit eveniet repellendus voluptatum, architecto nobis? Explicabo, vel quo quibusdam nesciunt sed omnis cum praesentium tenetur, nihil at est aliquam error laboriosam deleniti, perspiciatis eos perferendis illum natus cupiditate accusantium autem dolore debitis fugit non. In eos harum vel aperiam beatae <a href="#" data-tool-tip="Follow us on twitter" id="twitter">distinctio aliquam</a> sapiente iusto, dicta possimus! Iste delectus labore fugiat mollitia eos nesciunt accusantium facere. Tenetur facere distinctio atque. Excepturi esse provident ex laboriosam dolore iste expedita! Tenetur hic maxime officia sequi suscipit ducimus, vel, assumenda consequuntur exercitationem illo, quibusdam fugiat blanditiis aspernatur amet unde eius a. Corporis, sapiente natus! Perferendis minus corporis repellat eius voluptas ea similique at delectus error tempore quasi quos beatae commodi qui illo tempora cumque maiores provident omnis quisquam cum, facilis, amet <a href="#" data-tool-tip="Subscribe our youtube channel">vel harum?</a> Vero ea nostrum ab perspiciatis esse omnis, odit dolorem illum numquam non quisquam consequuntur, inventore error placeat blanditiis voluptatum illo et ex reprehenderit quaerat? Quas suscipit ipsum optio eveniet quia atque vitae. Quia a delectus sint? Necessitatibus blanditiis dicta non culpa enim odit nemo error consequuntur repellat doloribus accusantium, molestias officia dolorem alias, tempora vel vero perferendis sequi minima porro amet? Cumque nihil vel dignissimos <a data-tool-tip="Connect with us on linked in" href="#">corrupti maiores.</a> Animi, architecto nihil! Doloremque nostrum quos saepe facere, dolores, veniam, libero harum molestiae autem explicabo exercitationem ipsam hic eius dignissimos delectus!</p>
+</body>
+</html>

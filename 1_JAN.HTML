@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* body{
+        background-color: rgb(75, 75, 75);
+    } */
+    #primary-heading{
+        color: greenyellow;
+    }
+    .title{
+        background-color: darkolivegreen;
+        color: white;
+        text-align: center;
+    }
+    h1{
+        color: navy;
+    }
+    /* More about selectors */
+    a{
+        text-decoration: none;
+    }
+    /*
+    div a{
+        color: green;
+    }
+    div li a{
+        color: brown;
+    }
+    */
+    /*
+    div .btn{
+        background-color: green;
+    }
+    .box-1 .btn{
+    }
+    .box-1 #reject{
+        usually not required in case of selecting id
+    }
+    #box3 #glow-btn{
+        usually not required in case of selecting id
+    }
+    #box3 a{
+    }
+    */
+    
+    /* selecting those anchor tags which are direct child of div */
+    /*
+    div > a{
+        color:black;
+    }
+    */
+    
+    /* li, a{
+        background-color: yellow;
+    } */
+    /* .title, .btn
+    #primary-heading, #glow-btn
+    #primary-heading, .btn
+    div, #primary-heading
+    div, .btn */
+
+    /* Selecting through attribute */
+    /* 
+    a[target = '_blank']{
+        color: crimson;
+    } 
+    
+    a[target]{
+        color: grey;
+    }
+    */
+
+    
+    div + a{
+        color: rgb(162, 67, 36);
+    }
+
+    li:nth-child(3){
+        background-color: tomato;
+    }
+    li:nth-child(even){
+        background-color: yellow;
+    }
+    li:nth-child(odd){
+        background-color: aqua;
+    }
+    li:nth-child(3n-7){
+        background-color: brown;
+    }
+</style>
+<body>
+    <h1 id="primary-heading" class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, pariatur.</h1>
+    <a class="btn" href="#" target="_blank">Button 1</a> |
+    <a class="btn" href="#" target="">Button 2</a>
+    <hr>
+    <div>
+        <h2 class="title">Lorem ipsum dolor, sit amet consectetur adipisicing.</h2>
+        <ul>
+            <a target="_blank" href="#"><li>Lorem ipsum dolor sit amet consectetur adipisicing.</li></a>
+            <a href="#"><li>Impedit quos et illo suscipit consectetur saepe.</li></a>
+            <a target="_self" href="#"><li>Repellendus natus consequuntur quia ipsam? Impedit, quasi.</li></a>
+            <a target="" href="#"><li>Dolore veniam pariatur dolores, consequatur sequi aspernatur.</li></a>
+            <a target="_blank" href="#"><li>Similique in fuga sunt ut, hic iure.</li></a>
+        </ul>
+        <a href="#" class="btn">Accept</a> |
+        <a href="#" class="btn" id="reject">Reject</a>
+    </div>
+    <!-- <br> -->
+    <a href="#">Join Us</a> |
+    <a href="#">Start Free Trial</a>
+    <div>
+        <h2 class="title">Molestiae id placeat modi enim ducimus at.</h2>
+        <ol>
+            <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+            <li><a href="#">Nobis ea magnam voluptatibus maxime.</a></li>
+            <li><a href="#">Sapiente temporibus illo quidem reprehenderit!</a></li>
+            <li><a href="#">Maiores tenetur natus illo quam.</a></li>
+            <li><a href="#">Nostrum harum nisi obcaecati? Itaque.</a></li>
+            <li><a href="#">Similique autem cum et rerum?</a></li>
+            <li><a href="#">Laudantium suscipit aliquam nemo sed.</a></li>
+            <li><a href="#">Numquam qui nam nihil praesentium?</a></li>
+            <li><a href="#">Perferendis ipsa totam dolorum nam?</a></li>
+            <li><a href="#">Eum ipsam quae similique quis.</a></li>
+            <li><a href="#">Ipsam optio voluptatibus eveniet consequuntur?</a></li>
+            <li><a href="#">Deserunt, suscipit ullam! Alias, iure.</a></li>
+            <li><a href="#">Vero aspernatur fuga facilis deserunt?</a></li>
+            <li><a href="#">Eaque beatae quidem esse? Molestias!</a></li>
+            <li><a href="#">Repellat fugiat eum explicabo magni!</a></li>
+        </ol>
+        <a href="#" class="btn">Button 3</a> |
+        <a href="#" class="btn">Button 4</a>
+    </div>
+    <!-- <br> -->
+    <a href="#">Button 5</a> |
+    <a href="#">Button 6</a>
+</body>
+</html>
+<!--  
+    Next Class: Pseudo Classes
+-->

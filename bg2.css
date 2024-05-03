@@ -1,0 +1,32 @@
+div{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 10px dashed red;
+    background-image: url("i4.jpeg");
+    /* background-color: blueviolet; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: top right; */
+    /* background-origin: content-box; */
+    /* background-origin: content-box; */
+    /* background-clip: padding-box; */
+    background-clip: border-box;
+}
+
+
+/* 
+
+1) Background-origin :
+
+    1) image : padding-box(default)(doesn't Proper working),border-box, content-box(doesn't Proper working)
+    2) color : border-box(default),padding-box and content-box(doesn't working)
+
+
+2) Background-clip :
+    1) color : border-box(default),content-box,padding-box
+    2) image : padding-box,content-box,border-box(proper Doesn't working)
+*/
+
+

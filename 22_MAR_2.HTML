@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        border: red solid;
+        margin: 1rem;
+    }
+    #box1{
+        display: inline;
+        height: 250px;
+        width: 1000px;
+    }
+
+    #btn2, #btn3, #btn4{
+        text-decoration: none;
+        border: black solid;
+        background-color: rgb(48, 156, 251);
+        color: white;
+    }
+
+    #btn2{
+        display: block;
+        width: 250px;
+        margin: 1rem auto;
+    }
+
+    #btn3{
+        /* display: block; */
+        display: inline-block;
+        width: 150px;
+        /* Takes width, margin: auto doesn't work */
+    }
+    #box2{
+        padding: 1rem;
+        /* text-decoration: underline; */
+        /* text-decoration: overline; */
+        text-decoration: line-through;
+        /* text-decoration: none; */
+        cursor: pointer;
+    }
+    ul{
+        /* list-style-type: none; */
+        list-style: none;
+    }
+</style>
+<body>
+    <div id="box1">Box1</div>
+    <button>Button 1</button>
+    <a href="#" id="btn2">Button 2</a>
+    <a href="#" id="btn3">Button 3</a>
+    <a href="#" id="btn4">Button 4</a>
+    <div id="box2">Box2</div>
+    <div id="box3">Box3</div>
+    <ul>
+        <li>Lorem.</li>
+        <li>Maxime.</li>
+        <li>Quibusdam?</li>
+        <li>Debitis.</li>
+        <li>Illum.</li>
+    </ul>
+</body>
+</html>
+
+<!-- Next Class: outline, display flex -->
